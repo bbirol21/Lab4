@@ -1,8 +1,9 @@
 package streaming;
+
 import media.*;
+import streaming.StreamingService;
+import streaming.User;
 import devices.*;
-
-
 
 public class Main {
 	public static void main(String[] args) {
@@ -68,6 +69,6 @@ public class Main {
 		stream.addMedia(ser3);
 		
 		stream.notifyAllUsers();
-
+		//System.out.println(cp1.notifyOwner(mov6));
 	}
 }
