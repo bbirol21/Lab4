@@ -70,5 +70,23 @@ public class Main {
 		
 		stream.notifyAllUsers();
 		//System.out.println(cp1.notifyOwner(mov6));
+		
+		//##############-In-Lab-##################
+		System.out.println("------------------------------------------");
+		System.out.println("----------------In-Lab Output-------------");
+		System.out.println("------------------------------------------");
+		FreeUser us5 = new FreeUser("BerkeLeventC");
+		PremiumUser us6 = new PremiumUser("FatmaNurY");
+		us5.likeGenre(Genre.SCIFI);
+		us5.likeGenre(Genre.ACTION);
+		us6.likeGenre(Genre.COMEDY);
+		us6.likeGenre(Genre.ROMANCE);
+		CellPhone cp4 = new CellPhone(us5);
+		CellPhone cp5 = new CellPhone(us6);
+		PersonalComputer pc4 = new PersonalComputer(us5);
+		PersonalComputer pc5 = new PersonalComputer(us6);
+		stream.addUser(us5);
+		stream.addUser(us6);
+		stream.notifyAllUsers();
 	}
 }

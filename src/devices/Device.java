@@ -8,6 +8,8 @@ public class Device {
 	private int ID;
 	private User user;
 	private static int uniqueIdCounter = 0;
+	private int notificationCount = 0;
+	
 	//degistirilemez
 	
 	public Device(User user) {
@@ -38,7 +40,12 @@ public class Device {
 	}
 	
 	public String notifyOwner(Media m) {
-		String notif = "Hi " + user.getUsername() + "\n" + m.generateNotification();
+		notificationCount++;
+		String notif = "Hi " + user.getUsername() + "\n" + m.generateNotification() + "\n" + user.postNotificationText(notificationCount);
 		return notif;
+	}
+	
+	public int getnotificationCount() {
+		return notificationCount;
 	}
 }

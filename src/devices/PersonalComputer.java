@@ -12,7 +12,7 @@ public class PersonalComputer extends Device {
 	
 	public String notifyOwner(Media m) {
 		return super.notifyOwner(m) + "\n" + "Watch it now from"
-				+ " your PersonalComputer with the id "+ super.getId() + "\n" + "\n" + "\n";
+				+ " your PersonalComputer with the id "+ super.getId() +  "\n" + "\n" + "\n";
 	}
 	
 }

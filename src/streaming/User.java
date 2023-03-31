@@ -37,4 +37,9 @@ public class User {
 	public void removeDevice(Device d) {
 		usersDevices.remove(d);
 	}
+	
+	public String postNotificationText(int notificationCount) {
+		String str = "New advertisement";
+		return str;
+	}
 }
